@@ -10,13 +10,20 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .logo {
+      font-family: "Poppins";
+    }
+  </style>
+
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md">
+  <nav class="navbar navbar-expand-md sticky-top">
     <div class="container-xxl">
-      <a href="#about" class="navbar-brand fw-semibold text-secondary">Muntaqim Ahmed</a>
+      <a href="#about" class="navbar-brand fw-semibold text-primary logo">muntaqim a.</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -30,41 +37,46 @@
           <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/pdf/Resume.pdf">CV</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main class="container my-4">
-    <div class="row g-4">
-      <!-- SIDEBAR -->
-      <aside class="col-lg-3 col-md-4">
-        <div class="card border-0 sidebar-card">
-          <div class="card-body text-center">
-            <img src="assets/Images/img.jpeg" alt="Profile photo" class="avatar mb-3">
-            <div class="name">Muntaqim Ahmed</div>
-            <div class="text-muted">CS PhD Student</div>
-            <div class="text-muted">University of Massachusetts Lowell</div>
-            <hr>
-            <ul class="list-unstyled list-social text-start small mb-0">
-              <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Lowell, MA, USA</li>
-              <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:Muntaqimahmed@gmail.com">Email</a></li>
-              <li class="mb-2"><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li class="mb-2"><i class="bi bi-github me-2"></i><a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener">GitHub</a></li>
-              <li><i class="bi bi-mortarboard me-2"></i><a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
-            </ul>
-          </div>
+  <div class="row g-4">
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 col-md-4">
+      <div class="card border-0 sidebar-card sticky-top">
+        <div class="card-body text-center">
+          <img src="assets/Images/img.jpeg" alt="Profile photo" class="avatar mb-3">
+          <div class="name te">Muntaqim Ahmed</div>
+          <div class="text-muted">CS PhD Student</div>
+          <div class="text-muted">University of Massachusetts Lowell</div>
+          <hr>
+          <ul class="list-unstyled list-social text-start small mb-0">
+            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i><span class="text-primary">Lowell, MA, USA</span></li>
+            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:muntaqimahmed@gmail.com">Email</a></li>
+            <li class="mb-2"><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li class="mb-2"><i class="bi bi-github me-2"></i><a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener">GitHub</a></li>
+            <li><i class="bi bi-mortarboard me-2"></i><a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
+          </ul>
         </div>
-      </aside>
+      </div>
+    </aside>
 
-      <!-- MAIN CONTENT -->
-      <section class="col-lg-9 col-md-8">
-        <!-- ABOUT -->
-        <section id="about" class="bg-white rounded-4 p-4 shadow-sm">
-          <p class="mb-1 fw-semibold">Hi,</p>
-          <p class="mb-3">
-            I am a PhD student in
+    <!-- MAIN CONTENT -->
+    <section class="col-lg-9 col-md-8">
+
+      <!-- ABOUT -->
+      <section id="about" class="card section-card shadow-sm">
+        <div class="card-body">
+          <h2 class="mb-1 fw-semibold">
+            <span class="text-primary logo" id="element"></span>
+            <span>I'm Muntaqim Ahmed</span>
+          </h2>
+          <p class="mb-3 mt-3">
+            A PhD student in
             <a href="https://www.uml.edu/sciences/computer-science/programs/doctorate.aspx">Computer Science</a>
             at the University of Massachusetts Lowell, advised by
             <a href="https://www.uml.edu/sciences/computer-science/people/ma-ruizhe.aspx">Dr. Ruizhe Ma</a>.
@@ -81,10 +93,12 @@
             <li>LLMs and VLMs</li>
             <li>Clinical AI</li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- NEWS -->
-        <section id="news" class="bg-white rounded-4 p-4 shadow-sm mt-4 news">
+      <!-- NEWS -->
+      <section id="news" class="card section-card shadow-sm mt-4 news">
+        <div class="card-body">
           <div class="d-flex align-items-center mb-2">
             <span class="badge-dot"></span>
             <h2 class="h5 m-0">News</h2>
@@ -96,16 +110,17 @@
             <li class="d-flex py-2 border-bottom"><span class="date me-3">2025.04</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></li>
             <li class="d-flex py-2"><span class="date me-3">2024.10</span><span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span></li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!-- PUBLICATIONS -->
-        <section id="publications" class="mt-4">
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="card section-card shadow-sm mt-4">
+        <div class="card-body">
           <div class="d-flex align-items-center mb-3">
             <i class="bi bi-journal-text me-2 text-primary fs-4"></i>
             <h2 class="h4 m-0 fw-bold">Publications</h2>
           </div>
 
-          <!-- publication card -->
           <div class="card mb-3 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
@@ -124,7 +139,7 @@
             </div>
           </div>
 
-          <div class="card mb-3 shadow-sm">
+          <div class="card mb-0 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
               <p class="card-text"><em>Muntaqim Ahmed</em>, Ruizhe Ma</p>
@@ -132,10 +147,12 @@
               <a href="#" class="card-link">arXiv</a>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- PRESENTATIONS -->
-        <section id="presentations" class="mt-5">
+      <!-- PRESENTATIONS -->
+      <section id="presentations" class="card section-card shadow-sm mt-4">
+        <div class="card-body">
           <div class="d-flex align-items-center mb-3">
             <i class="bi bi-easel2 me-2 text-primary fs-4"></i>
             <h2 class="h4 m-0 fw-bold">Presentations</h2>
@@ -150,7 +167,7 @@
               </div>
             </div>
 
-             <div class="list-group-item d-flex gap-3 align-items-start">
+            <div class="list-group-item d-flex gap-3 align-items-start">
               <span class="badge text-bg-secondary align-self-center">Poster</span>
               <div class="flex-grow-1">
                 <div class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -159,7 +176,7 @@
               </div>
             </div>
 
-             <div class="list-group-item d-flex gap-3 align-items-start">
+            <div class="list-group-item d-flex gap-3 align-items-start">
               <span class="badge text-bg-secondary align-self-center">Poster</span>
               <div class="flex-grow-1">
                 <div class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -168,7 +185,7 @@
               </div>
             </div>
 
-             <div class="list-group-item d-flex gap-3 align-items-start">
+            <div class="list-group-item d-flex gap-3 align-items-start">
               <span class="badge text-bg-secondary align-self-center">Poster</span>
               <div class="flex-grow-1">
                 <div class="fw-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
@@ -177,10 +194,12 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <!-- EDUCATION -->
-        <section id="education" class="mb-5 mt-5">
+      <!-- EDUCATION -->
+      <section id="education" class="card section-card shadow-sm mt-4">
+        <div class="card-body">
           <div class="d-flex align-items-center mb-3">
             <i class="bi bi-journal-bookmark me-2 text-primary fs-4"></i>
             <h2 class="h4 m-0 fw-bold">Education</h2>
@@ -196,20 +215,21 @@
             </div>
           </div>
 
-          <div class="card shadow-sm mb-3">
+          <div class="card shadow-sm mb-0">
             <div class="card-body">
               <div class="d-flex justify-content-between">
                 <h6 class="card-title mb-1">M.S. in <span class="fw-semibold">Computer Science</span></h6>
                 <span class="text-muted small">2023 – 2025</span>
               </div>
-              <div class="text-muted">University of Massachusetts Lowell </div>
+              <div class="text-muted">University of Massachusetts Lowell</div>
             </div>
           </div>
+        </div>
+      </section>
 
-        </section>
-
-        <!-- EXPERIENCE -->
-        <section id="experience" class="mb-4">
+      <!-- EXPERIENCE -->
+      <section id="experience" class="card section-card shadow-sm mt-4">
+        <div class="card-body">
           <div class="d-flex align-items-center mb-3">
             <i class="bi bi-briefcase me-2 text-primary fs-4"></i>
             <h2 class="h4 m-0 fw-bold">Experience</h2>
@@ -233,7 +253,7 @@
                 </ul>
               </div>
 
-              <div>
+              <div class="mb-0">
                 <div class="fw-semibold mb-2"><span class="timeline-dot"></span>Generative AI</div>
                 <ul class="mb-0">
                   <li>Building diffusion/transformer models for synthetic data generation.</li>
@@ -242,21 +262,90 @@
               </div>
             </div>
           </div>
-        </section>
 
-        <!-- CV -->
-        <section id="cv" class="mb-5">
-          <div class="d-flex align-items-center">
-            <i class="bi bi-file-earmark-text me-2 text-primary fs-5"></i>
-            <h2 class="h6 m-0">CV</h2>
-          </div>
-          <p class="mt-2 mb-0">Download: <a href="assets/pdf/Resume.pdf" class="link-primary">PDF</a></p>
-        </section>
-
+        </div>
       </section>
-    </div>
-  </main>
+    </section>
+  </div>
+</main>
 
+  <!-- FOOTER -->
+<footer class="bg-white border-top mt-5">
+  <div class="container py-4 text-center">
+    <p class="mb-1">&copy; 2025 Muntaqim Ahmed. All rights reserved.</p>
+    <div class="d-flex justify-content-center gap-3">
+      <a href="mailto:muntaqimahmed@gmail.com" class="text-decoration-none text-muted">
+        <i class="bi bi-envelope"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener" class="text-decoration-none text-muted">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener" class="text-decoration-none text-muted">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener" class="text-decoration-none text-muted">
+        <i class="bi bi-mortarboard"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Typed.js -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Hello!', 'Hola!', 'Bonjour!', 'Namaste!','হ্যালো!' ],
+      typeSpeed: 90,
+      backSpeed: 40,
+      backDelay: 1200,
+      startDelay: 500,
+      smartBackspace: true,
+      loop: true
+    });
+
+    
+  // Smooth scroll that always lands the section flush under the sticky navbar
+  document.querySelectorAll('.nav-link[href^="#"], .navbar-brand[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const hash = this.getAttribute('href');
+      const target = document.querySelector(hash);
+      if (!target) return;
+
+      e.preventDefault();
+
+      const nav = document.querySelector('.navbar');
+      const navHeight = nav ? Math.ceil(nav.getBoundingClientRect().height) : 0;
+
+      // Use viewport coords + pageYOffset instead of offsetTop
+      const y = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8; // extra 8px breathing room
+      window.scrollTo({ top: y, behavior: 'smooth' });
+
+      // Update URL without causing a native jump
+      history.pushState(null, '', hash);
+
+      const mainNav = document.getElementById('main-nav');
+      const bsCollapse = mainNav ? bootstrap.Collapse.getInstance(mainNav) : null;
+      if (bsCollapse && getComputedStyle(mainNav).display !== 'none') {
+        bsCollapse.hide();
+      }
+    });
+  });
+
+
+  window.addEventListener('load', () => {
+    if (location.hash) {
+      const target = document.querySelector(location.hash);
+      const nav = document.querySelector('.navbar');
+      if (target && nav) {
+        const navHeight = Math.ceil(nav.getBoundingClientRect().height);
+        const y = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 8;
+        window.scrollTo({ top: y, behavior: 'auto' });
+      }
+    }
+  });
+  </script>
 </body>
 </html>
