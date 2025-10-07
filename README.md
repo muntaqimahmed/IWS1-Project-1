@@ -6,4 +6,8 @@ Oct 1 submission note,
 
 For the wow feature, I was supposed to add a parallax effect to the website. However, after implementing it I realized it didn’t suit the current design, so I explored other options and ultimately added a Typed.js effect instead. In addition, I fixed several scrolling bugs and added a footer and a logo.
 
+Oct 8 submission note,
+
+Removed the placeholder text with actual text and ready to host the site!!!
+
 
