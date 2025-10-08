@@ -11,19 +11,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    .logo {
-      font-family: "Poppins";
-    }
-  </style>
-
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-md sticky-top">
+  <nav class="navbar navbar-expand-md sticky-top" aria-label="Primary navigation">
     <div class="container-xxl">
-      <a href="#about" class="navbar-brand fw-semibold text-primary logo">muntaqim a.</a>
+      <a href="#about" class="navbar-brand fw-semibold text-primary logo">muntaqim ar</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,29 +31,32 @@
           <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
           <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="assets/pdf/Resume.pdf">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/pdf/Resume.pdf" type="application/pdf">CV (PDF)</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <main class="container my-4">
+  <!-- MAIN -->
+  <main class="container my-4" id="main">
+  <h1 class="visually-hidden">Muntaqim Ahmed – CS PhD Student at the University of Massachusetts Lowell</h1>
   <div class="row g-4">
     <!-- SIDEBAR -->
-    <aside class="col-lg-3 col-md-4">
+    <aside class="col-lg-3 col-md-4" aria-label="Sidebar">
       <div class="card border-0 sidebar-card sticky-top">
         <div class="card-body text-center">
-          <img src="assets/Images/img.jpeg" alt="Profile photo" class="avatar mb-3">
+          <img src="assets/Images/img.jpeg" alt="Portrait of Muntaqim Ahmed" class="avatar mb-3">
           <div class="name te">Muntaqim Ahmed</div>
           <div class="text-muted">CS PhD Student</div>
           <div class="text-muted">University of Massachusetts Lowell</div>
           <hr>
+          <!-- Social links list -->
           <ul class="list-unstyled list-social text-start small mb-0">
-            <li class="mb-2"><i class="bi bi-geo-alt me-2"></i><span class="text-primary">Lowell, MA, USA</span></li>
-            <li class="mb-2"><i class="bi bi-envelope me-2"></i><a href="mailto:muntaqimahmed@gmail.com">Email</a></li>
-            <li class="mb-2"><i class="bi bi-linkedin me-2"></i><a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li class="mb-2"><i class="bi bi-github me-2"></i><a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener">GitHub</a></li>
-            <li><i class="bi bi-mortarboard me-2"></i><a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li class="mb-2"><i class="bi bi-geo-alt me-2" aria-hidden="true"></i><span class="text-primary">Lowell, MA, USA</span></li>
+            <li class="mb-2"><i class="bi bi-envelope me-2" aria-hidden="true"></i><a href="mailto:muntaqimahmed@gmail.com">Email</a></li>
+            <li class="mb-2"><i class="bi bi-linkedin me-2" aria-hidden="true"></i><a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li class="mb-2"><i class="bi bi-github me-2" aria-hidden="true"></i><a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener">GitHub</a></li>
+            <li><i class="bi bi-mortarboard me-2" aria-hidden="true"></i><a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener">Google Scholar</a></li>
           </ul>
         </div>
       </div>
@@ -69,9 +66,9 @@
     <section class="col-lg-9 col-md-8">
 
       <!-- ABOUT -->
-      <section id="about" class="card section-card shadow-sm">
+      <section id="about" class="card section-card shadow-sm" aria-labelledby="about-heading">
         <div class="card-body">
-          <h2 class="mb-1 fw-semibold">
+          <h2 id="about-heading" class="mb-1 fw-semibold">
             <span class="text-primary logo" id="element"></span>
             <span>I'm Muntaqim Ahmed</span>
           </h2>
@@ -97,11 +94,11 @@
       </section>
 
       <!-- NEWS -->
-      <section id="news" class="card section-card shadow-sm mt-4 news">
+      <section id="news" class="card section-card shadow-sm mt-4 news" aria-labelledby="news-heading">
         <div class="card-body">
           <div class="d-flex align-items-center mb-2">
-            <span class="badge-dot"></span>
-            <h2 class="h5 m-0">News</h2>
+            <span class="badge-dot" aria-hidden="true"></span>
+            <h2 id="news-heading" class="h5 m-0">News</h2>
           </div>
           <ul class="list-unstyled m-0">
             <li class="d-flex py-2 border-bottom"><span class="date me-3">2025.10</span><span>Completed IWS Project 1</span></li>
@@ -109,22 +106,21 @@
             <li class="d-flex py-2 border-bottom"><span class="date me-3">2025.07</span><span>Attended US OPEN 2025 Fan week.</span></li>
             <li class="d-flex py-2 border-bottom"><span class="date me-3">2025.04</span><span>Completed PhD Qualification Requirements.</span></li>
             <li class="d-flex py-2 border-bottom"><span class="date me-3">2025.04</span><span>Submitted two manuscripts.</span></li>
-
           </ul>
         </div>
       </section>
 
       <!-- PUBLICATIONS -->
-      <section id="publications" class="card section-card shadow-sm mt-4">
+      <section id="publications" class="card section-card shadow-sm mt-4" aria-labelledby="publications-heading">
         <div class="card-body">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-journal-text me-2 text-primary fs-4"></i>
-            <h2 class="h4 m-0 fw-bold">Publications</h2>
+            <i class="bi bi-journal-text me-2 text-primary fs-4" aria-hidden="true"></i>
+            <h2 id="publications-heading" class="h4 m-0 fw-bold">Publications</h2>
           </div>
 
           <div class="card mb-3 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Two is better than one: Improving radiological diagnosis with the fusion of Image and text modalities.</h5>
+              <h3 class="card-title h5">Two is better than one: Improving radiological diagnosis with the fusion of Image and text modalities.</h3>
               <p class="card-text"><em>Muntaqim Ahmed</em>, Ruizhe Ma</p>
               <p class="card-text text-muted">The rapid development of multimodal machine learning (MML) has been a transformational paradigm that allows seamless integration of heterogeneous data sources toward a better understanding of health and disease.</p>
               <a href="#" class="card-link">Under Review</a>
@@ -133,18 +129,18 @@
 
           <div class="card mb-3 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Multimodal Machine Learning in Healthcare: A Methodological Review of Techniques and their Clinical Applications.</h5>
+              <h3 class="card-title h5">Multimodal Machine Learning in Healthcare: A Methodological Review of Techniques and their Clinical Applications.</h3>
               <p class="card-text"><em>Muntaqim Ahmed</em>, Ruizhe Ma</p>
-              <p class="card-text text-muted">Integration of deep learning in healthcare has revolutionized the analysis of complex, high-dimensional, and heterogeneous data. However, traditional single-modal approaches often fail to grasp the multi-faceted nature of human health, in which genetic, environmental, lifestyle, and physiological factors interact in complex ways..</p>
+              <p class="card-text text-muted">Integration of deep learning in healthcare has revolutionized the analysis of complex, high-dimensional, and heterogeneous data. However, traditional single-modal approaches often fail to grasp the multi-faceted nature of human health, in which genetic, environmental, lifestyle, and physiological factors interact in complex ways.</p>
               <a href="#" class="card-link">Under Review</a>
             </div>
           </div>
 
           <div class="card mb-0 shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Evaluating Raw and Decomposed Physiological Signals for Heart Rate Forecasting in Tactical Athletes </h5>
+              <h3 class="card-title h5">Evaluating Raw and Decomposed Physiological Signals for Heart Rate Forecasting in Tactical Athletes</h3>
               <p class="card-text"><em>Muntaqim Ahmed</em>, Ruizhe Ma</p>
-              <p class="card-text text-muted">This study evaluates the feasibility of short-term heart rate forecasting from wearable-derived physiological time series in tactical athletes. In particular, it examines whether decomposing signals into trend and residual components enhances predictive performance compared to modeling raw signals. .</p>
+              <p class="card-text text-muted">This study evaluates the feasibility of short-term heart rate forecasting from wearable-derived physiological time series in tactical athletes. In particular, it examines whether decomposing signals into trend and residual components enhances predictive performance compared to modeling raw signals.</p>
               <a href="#" class="card-link">Under Review</a>
             </div>
           </div>
@@ -152,17 +148,17 @@
       </section>
 
       <!-- PRESENTATIONS -->
-      <section id="presentations" class="card section-card shadow-sm mt-4">
+      <section id="presentations" class="card section-card shadow-sm mt-4" aria-labelledby="presentations-heading">
         <div class="card-body">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-easel2 me-2 text-primary fs-4"></i>
-            <h2 class="h4 m-0 fw-bold">Presentations</h2>
+            <i class="bi bi-easel2 me-2 text-primary fs-4" aria-hidden="true"></i>
+            <h2 id="presentations-heading" class="h4 m-0 fw-bold">Presentations</h2>
           </div>
           <div class="list-group shadow-sm">
             <div class="list-group-item d-flex gap-3 align-items-start">
               <span class="badge text-bg-primary align-self-center">Poster</span>
               <div class="flex-grow-1">
-                <div class="fw-semibold">Presented in IWS I class for the theme of 'What I wish I knew'</div>
+                <h3 class="fw-semibold h5 mb-0">Presented in IWS I class for the theme of 'What I wish I knew'</h3>
                 <div class="fst-italic">Discussed two points: SASS and Code Documentation.</div>
                 <div class="small mt-1"><a href="#" class="link-primary">PDF</a></div>
               </div>
@@ -172,17 +168,17 @@
       </section>
 
       <!-- EDUCATION -->
-      <section id="education" class="card section-card shadow-sm mt-4">
+      <section id="education" class="card section-card shadow-sm mt-4" aria-labelledby="education-heading">
         <div class="card-body">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-journal-bookmark me-2 text-primary fs-4"></i>
-            <h2 class="h4 m-0 fw-bold">Education</h2>
+            <i class="bi bi-journal-bookmark me-2 text-primary fs-4" aria-hidden="true"></i>
+            <h2 id="education-heading" class="h4 m-0 fw-bold">Education</h2>
           </div>
 
           <div class="card shadow-sm mb-3">
             <div class="card-body">
               <div class="d-flex justify-content-between">
-                <h6 class="card-title mb-1">PhD in <span class="fw-semibold">Computer Science</span></h6>
+                <h3 class="card-title mb-1 h6">PhD in <span class="fw-semibold">Computer Science</span></h3>
                 <span class="text-muted small">2023 – Present</span>
               </div>
               <div class="text-muted">University of Massachusetts Lowell</div>
@@ -192,7 +188,7 @@
           <div class="card shadow-sm mb-0">
             <div class="card-body">
               <div class="d-flex justify-content-between">
-                <h6 class="card-title mb-1">M.S. in <span class="fw-semibold">Computer Science</span></h6>
+                <h3 class="card-title mb-1 h6">M.S. in <span class="fw-semibold">Computer Science</span></h3>
                 <span class="text-muted small">2023 – 2025</span>
               </div>
               <div class="text-muted">University of Massachusetts Lowell</div>
@@ -202,17 +198,17 @@
       </section>
 
       <!-- EXPERIENCE -->
-      <section id="experience" class="card section-card shadow-sm mt-4">
+      <section id="experience" class="card section-card shadow-sm mt-4" aria-labelledby="experience-heading">
         <div class="card-body">
           <div class="d-flex align-items-center mb-3">
-            <i class="bi bi-briefcase me-2 text-primary fs-4"></i>
-            <h2 class="h4 m-0 fw-bold">Experience</h2>
+            <i class="bi bi-briefcase me-2 text-primary fs-4" aria-hidden="true"></i>
+            <h2 id="experience-heading" class="h4 m-0 fw-bold">Experience</h2>
           </div>
 
           <div class="card shadow-sm">
             <div class="card-body">
               <div class="d-flex flex-wrap align-items-baseline gap-2">
-                <h5 class="mb-0">Graduate Research Assistant</h5>
+                <h3 class="mb-0 h5">Graduate Research Assistant</h3>
                 <span class="text-muted">| University of Massachusetts Lowell</span>
                 <span class="ms-auto text-muted small">Aug 2023 – Present</span>
               </div>
@@ -220,7 +216,7 @@
               <div class="rule"></div>
 
               <div class="mb-3">
-                <div class="fw-semibold mb-2"><span class="timeline-dot"></span>Multimodal Learning</div>
+                <div class="fw-semibold mb-2"><span class="timeline-dot" aria-hidden="true"></span>Multimodal Learning</div>
                 <ul class="mb-0">
                   <li>Developing multimodal models for classification and retrieval.</li>
                   <li>Exploring fairness evaluation in VLMs.</li>
@@ -228,7 +224,7 @@
               </div>
 
               <div class="mb-0">
-                <div class="fw-semibold mb-2"><span class="timeline-dot"></span>Generative AI</div>
+                <div class="fw-semibold mb-2"><span class="timeline-dot" aria-hidden="true"></span>Generative AI</div>
                 <ul class="mb-0">
                   <li>Building diffusion/transformer models for synthetic data generation.</li>
                   <li>Mitigating dataset imbalance.</li>
@@ -241,24 +237,24 @@
       </section>
     </section>
   </div>
-</main>
+  </main>
 
   <!-- FOOTER -->
 <footer class="bg-white border-top mt-5">
   <div class="container py-4 text-center">
     <p class="mb-1">&copy; 2025 Muntaqim Ahmed. All rights reserved.</p>
     <div class="d-flex justify-content-center gap-3">
-      <a href="mailto:muntaqimahmed@gmail.com" class="text-decoration-none text-muted">
-        <i class="bi bi-envelope"></i>
+      <a href="mailto:muntaqimahmed@gmail.com" class="text-decoration-none text-muted" aria-label="Email">
+        <i class="bi bi-envelope" aria-hidden="true"></i><span class="visually-hidden">Email</span>
       </a>
-      <a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener" class="text-decoration-none text-muted">
-        <i class="bi bi-linkedin"></i>
+      <a href="https://www.linkedin.com/in/muntaqimahmed/" target="_blank" rel="noopener" class="text-decoration-none text-muted" aria-label="LinkedIn">
+        <i class="bi bi-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span>
       </a>
-      <a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener" class="text-decoration-none text-muted">
-        <i class="bi bi-github"></i>
+      <a href="https://www.github.com/muntaqimahmed" target="_blank" rel="noopener" class="text-decoration-none text-muted" aria-label="GitHub">
+        <i class="bi bi-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span>
       </a>
-      <a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener" class="text-decoration-none text-muted">
-        <i class="bi bi-mortarboard"></i>
+      <a href="https://scholar.google.com/citations?user=jt0ePE8AAAAJ&hl=en&authuser=1" target="_blank" rel="noopener" class="text-decoration-none text-muted" aria-label="Google Scholar">
+        <i class="bi bi-mortarboard" aria-hidden="true"></i><span class="visually-hidden">Google Scholar</span>
       </a>
     </div>
   </div>
@@ -270,14 +266,22 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+   
     var typed = new Typed('#element', {
-      strings: ['Hello!', 'Hola!', 'Bonjour!', 'Namaste!','হ্যালো!' ],
+      strings: [
+        '<span lang="en">Hello!</span>',
+        '<span lang="es">Hola!</span>',
+        '<span lang="fr">Bonjour!</span>',
+        '<span lang="hi">Namaste!</span>',
+        '<span lang="bn">হ্যালো!</span>'
+      ],
       typeSpeed: 90,
       backSpeed: 40,
       backDelay: 1200,
       startDelay: 500,
       smartBackspace: true,
-      loop: true
+      loop: true,
+      contentType: 'html'
     });
 
     

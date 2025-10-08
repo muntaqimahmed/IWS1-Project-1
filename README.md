@@ -10,4 +10,6 @@ Oct 8 submission note,
 
 Removed the placeholder text with actual text and ready to host the site!!!
 
+Made some last minutes changes.
+
 
