@@ -3,7 +3,7 @@
 ## Overview
 This is a **static personal portfolio website** created to showcase my **research interests, projects, and professional experiences**.  
 The main goal of this website is to provide potential collaborators, employers, and peers with a clear understanding of my work and background.  
-It complements my resume by offering a more visual and interactive presentation of my achievements.
+
 
 **Live Site:** [https://muntaqimahmed.github.io/IWS1-Project-1/](https://muntaqimahmed.github.io/IWS1-Project-1/)
 
@@ -13,11 +13,11 @@ It complements my resume by offering a more visual and interactive presentation 
 
 - index.html – The main page for the website.
 
-- assets/css/style.css – Contains custom styling rules and layout adjustments.
+- assets/css/style.css – Contains custom styling rules.
 
-- assets/pdf/Resume.pdf – Contains PDF version of resume linked on the site.
+- assets/pdf/Resume.pdf – Contains PDF version of resume.
 
-- assets/images/img.jpeg – Contains avatar image displayed on the homepage.
+- assets/images/img.jpeg – Contains avatar image.
 
 
 ## Technologies Used
